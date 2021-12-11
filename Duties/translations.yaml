@@ -1,0 +1,12 @@
+# Everything must have a string value (text with double-quotes around it)
+# Everything can be configured with Rich Text, only with < and > though
+
+On-Duty:
+  ADMIN: "{Player} is now on duty as an Admin"
+  POLICE: "{Player} is now on duty as a Police officer"
+  EMS: "{Player} is now on duty as an EMS unit"
+
+Off-Duty: "{Player} is now off duty"
+
+No-Job-Found: "Sorry, but that job does not exist"
+No-Current-Job: "Sorry, but you can't go off duty as you have no job"
