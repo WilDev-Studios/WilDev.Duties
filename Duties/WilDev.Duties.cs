@@ -38,4 +38,3 @@ namespace Duties
             return UniTask.CompletedTask;
         }
     }
-}
