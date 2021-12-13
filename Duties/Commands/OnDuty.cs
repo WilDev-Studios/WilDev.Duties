@@ -65,7 +65,7 @@ namespace Duties.Commands
             CurrentPlayerJobs.Add(ExecutedPlayer);
             
             PlayerDisplayNames.Add(ExecutedPlayer, ExecutedPlayer.DisplayName);
-            ExecutedPlayer.Player.SteamPlayer.playerID.characterName = "[" + RequestedJob.ToUpper() + "] " + ExecutedPlayer.DisplayName;
+            ExecutedPlayer.Player.SteamPlayer.playerID.characterName = "[" + RequestedJob.ToLower().ToUpper() + "] " + ExecutedPlayer.DisplayName;
 
             // Sends a message to all players saying that the Player is now on duty in that job
             ChatManager.serverSendMessage(m_StringLocalizer["On-Duty:" + RequestedJob.ToUpper(), new { Player = ExecutedPlayer.DisplayName }], UnityEngine.Color.green, null, null, EChatMode.GLOBAL, m_Configuration.GetSection("Messages-Image-URL").Get<string>(), true);
