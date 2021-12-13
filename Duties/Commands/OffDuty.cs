@@ -52,7 +52,7 @@ namespace Duties.Commands
             // Clears Player from the Dictionary
             OnDutyCommand.CurrentPlayerJobs.Remove(ExecutedPlayer);
 
-            ExecutedPlayer.Player.SteamPlayer.playerID.characterName = OnDutyCommand.PlayerDisplayNames[ExecutedPlayer]
+            ExecutedPlayer.Player.SteamPlayer.playerID.characterName = OnDutyCommand.PlayerDisplayNames[ExecutedPlayer];
 
             // Sends a message to all players saying that the Player is now off duty from that job
             ChatManager.serverSendMessage(m_StringLocalizer["Off-Duty", new { Player = ExecutedPlayer.DisplayName }], UnityEngine.Color.green, null, null, EChatMode.GLOBAL, m_Configuration.GetSection("Messages-Image-URL").Get<string>(), true);
