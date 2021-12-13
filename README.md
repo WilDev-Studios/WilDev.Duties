@@ -9,9 +9,9 @@ Make sure you are in-game and run this command:
 *Config.yaml*
 ```yaml
 Jobs-List:
-  ADMIN
-  POLICE
-  EMS
+  ADMIN: "Admin"
+  POLICE: "Police"
+  EMS: "EMS"
 
 Messages-Image-URL: https://example.image.org/images/001.jpg
 ```
